@@ -43,6 +43,22 @@ public class PainelCalculadora extends javax.swing.JPanel {
         
     }
     
+    /**
+     *
+     * <h1>Método responsável por realizar a validação dos botões disponíveis conforme a base
+     * do primeiro número.</h1>
+     * 
+     *
+     * <p>
+     * Realiza a validação dos botões disponíveis conforme a base
+     * informada pelo usuário</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see validarCombo1
+     */
+    
     public void validarCombo1(){
         
         jComboBase2.setVisible(false);
@@ -145,6 +161,22 @@ public class PainelCalculadora extends javax.swing.JPanel {
 
         }
     }
+    
+    /**
+     *
+     * <h1>Método responsável por realizar a validação dos botões disponíveis conforme a base
+     * do segundo número.</h1>
+     * 
+     *
+     * <p>
+     * Realiza a validação dos botões disponíveis conforme a base
+     * informada pelo usuário</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see validarCombo2
+     */
     
     public void validarCombo2(){
          if (!txtSaida.getText().equals("0")) {
@@ -708,7 +740,6 @@ public class PainelCalculadora extends javax.swing.JPanel {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         setCalculado();
         txtSaida.setText(txtSaida.getText() + "2");
-
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -762,7 +793,6 @@ public class PainelCalculadora extends javax.swing.JPanel {
         if (txtSaida.getText().equals("0")) {
             
             txtSaida.setText("");
-            
         }
         txtSaida.setText(txtSaida.getText() + jButtonF.getActionCommand());
 
@@ -834,7 +864,7 @@ public class PainelCalculadora extends javax.swing.JPanel {
     }//GEN-LAST:event_jButtonMultiplicacaoActionPerformed
 
     private void jButtonVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVoltarActionPerformed
-        // TODO add your handling code here:
+
         String voltar = txtSaida.getText();
         
             if (voltar.length() == 1) {

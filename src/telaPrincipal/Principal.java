@@ -9,7 +9,7 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.net.URL;
-import paineis.CambiaPanel;
+import paineis.LigarPainel;
 import paineis.PainelCalculadora;
 import paineis.PainelConversao;
 import paineis.PnlHome;
@@ -32,7 +32,7 @@ public class Principal extends javax.swing.JFrame {
         this.BtnHome.setSelected(true);
          
         
-        new CambiaPanel(pnPrincipal, new PnlHome());
+        new LigarPainel(pnPrincipal, new PnlHome());
     }
 
     /**
@@ -186,7 +186,7 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHomeActionPerformed
-        new CambiaPanel(pnPrincipal, new PnlHome());
+        new LigarPainel(pnPrincipal, new PnlHome());
         if (this.BtnHome.isSelected()){
 
             this.BtnHome.setColorNormal(new Color(51,51,51));
@@ -221,7 +221,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnCalculadoraKeyPressed
 
     private void BtnCalculadoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCalculadoraActionPerformed
-        new CambiaPanel(pnPrincipal, new PainelCalculadora());
+        new LigarPainel(pnPrincipal, new PainelCalculadora());
         if (this.BtnCalculadora.isSelected()){
 
             this.BtnHome.setColorNormal(new Color(0,0,0));
@@ -253,7 +253,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnCalculadoraMousePressed
 
     private void BtnConversaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnConversaoActionPerformed
-        new CambiaPanel(pnPrincipal, new PainelConversao());
+        new LigarPainel(pnPrincipal, new PainelConversao());
         if (this.BtnConversao.isSelected()){
 
             this.BtnHome.setColorNormal(new Color(0,0,0));

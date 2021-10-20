@@ -4,6 +4,19 @@ import calculos.Potencia;
 import javax.swing.JOptionPane;
 import static calculos.Potencia.potencia;
 
+    /**
+     *
+     * <h1>Classe responsável por realizar a conversão de bases.</h1>
+     *
+     * <p>
+     * Realiza a conversão de bases</p>
+     *
+     *
+     * @author Conversor
+     *
+     * @see Potencia
+     */
+
 public class Conversor {
 
     //ATRIBUTOS:
@@ -48,6 +61,21 @@ public class Conversor {
         this.base2 = base2;
     }
 
+    /**
+     *
+     * <h1>Método responsável por realizar a conversão de um número
+     * decimal para hexadecimal.</h1>
+     * 
+     *
+     * <p>
+     * Realiza a conversão de números decimais em hexadecimais</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see decimalHex
+     */
+    
     public String decimalHex(String decimal) {
         int res;
         char[] hexa = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
@@ -64,6 +92,21 @@ public class Conversor {
         resultado = valorHexadecimal;
         return resultado;
     }
+    
+    /**
+     *
+     * <h1>Método responsável por realizar a conversão de um número
+     * decimal para binário.</h1>
+     * 
+     *
+     * <p>
+     * Realiza a conversão de um número decimal para binário</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see decimalBin
+     */
 
     public String decimalBin(String decimal) {
         resultado = "";
@@ -76,6 +119,21 @@ public class Conversor {
         return resultado;
     }
 
+    /**
+     *
+     * <h1>Método responsável por realizar a conversão de um número
+     * binário para decimal.</h1>
+     * 
+     *
+     * <p>
+     * Realiza a conversão de um número binário para decimal</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see binDec
+     */
+    
     public String binDec(String binario) {
         aux = 0;
         num = 0;
@@ -92,6 +150,21 @@ public class Conversor {
         return resultado;
     }
 
+    /**
+     *
+     * <h1>Método responsável por realizar a conversão de um número
+     * binário para hexadecimal.</h1>
+     * 
+     *
+     * <p>
+     * Realiza a conversão de um número binário para hexadecimal</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see binHex
+     */
+    
     public String binHex(String binario) {
         String hexadecimal = "";
         int bin = Integer.parseInt(binario);
@@ -168,6 +241,21 @@ public class Conversor {
 
     }
 
+    /**
+     *
+     * <h1>Método responsável por realizar a conversão de um número
+     * hexadecimal para decimal.</h1>
+     * 
+     *
+     * <p>
+     * Realiza a conversão de um número hexadecimal para decimal</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see hexDec
+     */
+    
     public String hexDec(String numeroHex) {
         int res, numDec = 0, i = 0;
 
@@ -184,6 +272,21 @@ public class Conversor {
         return resultado;
     }
 
+    /**
+     *
+     * <h1>Método responsável por realizar a conversão de um número
+     * hexadecimal para binário.</h1>
+     * 
+     *
+     * <p>
+     * Realiza a conversão de um número hexadecimal para binário</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see hexDec
+     */
+    
     public String hexBin(String numeroHexadecimal) {
         String decimal = hexDec(numeroHexadecimal);
 
@@ -193,58 +296,66 @@ public class Conversor {
 
         return binario;
     }
+    
+    /**
+     *
+     * <h1>Método responsável por chamar os métodos que realizam as conversões entre números.</h1>
+     * 
+     *
+     * <p>
+     * Chama os métodos que realizam as conversões entre os números informados pelo usuário</p>
+     *
+     *
+     * @author Henrique
+     * @return resultado
+     * @throws java.lang.Exception
+     *
+     * @see mudarBase
+     */
 
     public String mudarBase() throws Exception {
         resultado = "";
 
         // CONVERSAO DECIMAL
-        if (base1 == 10) {
-
-            //DECIMAL P./HEXADECIMAL
-            if (base2 == 16) {
-                
-                decimalHex(N1);
-                
-            } //Decimal para binário
-            else {
-                decimalBin(N1);
-            }
-        } 
-
-        //CONVERSAO BINARIO 
-        else if (base1 == 2) {
-
-            aux = 0;
-            num = 0;
-
-            //BINARIO PARA DECIMAL
-            if (base2 == 10) {
-                
-                binDec(N1);
-                
-            } //BINARIO PARA HEXADECIMAL
-            else if (base2 == 16) {
-                
-                binHex(N1);
-                
-            }
-
-        } 
-
-        //CONVERSAO HEXADECIMAL  
-        else if (base1 == 16) {
-
-            // HEXADECIMAL PARA DECIMAL
-            if (base2 == 10) {
-                
-                hexDec(N1);
-                
-            } // HEXADECIMAL PARA BINARIO
-            else if (base2 == 2) {
-                
-                hexBin(N1);
-                
-            }
+        switch (base1) {
+            case 10:
+                //DECIMAL P./HEXADECIMAL
+                if (base2 == 16) {
+                    
+                    decimalHex(N1);
+                    
+                } //Decimal para binário
+                else {
+                    decimalBin(N1);
+                }   break;
+            case 2:
+                aux = 0;
+                num = 0;
+                //BINARIO PARA DECIMAL
+                if (base2 == 10) {
+                    
+                    binDec(N1);
+                    
+                } //BINARIO PARA HEXADECIMAL
+                else if (base2 == 16) {
+                    
+                    binHex(N1);
+                    
+                }   break;
+            case 16:
+                // HEXADECIMAL PARA DECIMAL
+                if (base2 == 10) {
+                    
+                    hexDec(N1);
+                    
+                } // HEXADECIMAL PARA BINARIO
+                else if (base2 == 2) {
+                    
+                    hexBin(N1);
+                    
+                }   break;
+            default:
+                break;
         }
         return resultado;
     }

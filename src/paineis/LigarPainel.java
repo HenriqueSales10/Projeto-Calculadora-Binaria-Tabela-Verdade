@@ -11,16 +11,22 @@ package paineis;
  */
 import javax.swing.JPanel;
 
-public class CambiaPanel {
+public class LigarPainel {
     //
     private JPanel container;
     private JPanel content;
 
 
-    /**
-     * Constructor de clase
+   /**
+     *
+     * <h1>Classe reponsável por realizar a ligação entre telas.</h1>
+     * 
+     *
+     * @author Henrique
+     *
+     * @see calcular
      */
-    public CambiaPanel(JPanel container, JPanel content) {
+    public LigarPainel(JPanel container, JPanel content) {
         
         this.container = container;
         this.content = content;
@@ -34,4 +40,4 @@ public class CambiaPanel {
         
     }
 
-}//--> fin clase
+}

@@ -1,16 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package calculos;
 
 import conversao.Conversor;
 
-/**
- *
- * @author Usuario
- */
+    /**
+     *
+     * <h1>Classe responsável por realizar o cálculo de adição, multiplicação e subtração de números de base 10, base 2 e base 16.</h1>
+     *
+     * <p>
+     * Realiza o cálculo das expressões</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see Calculador
+     */
 public class Calculador {
 
     private String n1, n2;
@@ -18,7 +22,7 @@ public class Calculador {
     private int baseN1 = 10;
     private int baseN2 = 2;
 
-    Conversor calc = new Conversor();
+    Conversor converter = new Conversor();
     
     String resultado;
 
@@ -70,94 +74,124 @@ public class Calculador {
         this.resultado = resultado;
     }
 
+    /**
+     *
+     * <h1>Método responsável por realizar os cálculos de adição, 
+     * subtração e multiplicação entre números decimais e hexadecimais.</h1>
+     * 
+     *
+     * <p>
+     * Realiza os cálculos de números decimais e hexadecimais</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see operacoesDecHex
+     */
     public String operacoesDecHex(String decimal, String hexadecimal) {
         int numDecimal = Integer.parseInt(decimal);
-        String numHexa = calc.hexDec(hexadecimal);
+        String numHexa = converter.hexDec(hexadecimal);
         String txt = "Binário: ";
 
-        if (op == '+') {
-            
-            int res = numDecimal + Integer.parseInt(numHexa);
-            resultado = txt + calc.decimalBin(Integer.toString(res));
-            
-        } 
-        
-        else if (op == '-') {
-            int resSub = numDecimal - Integer.parseInt(numHexa);
-            
+        switch (op) {
+            case '+':
+                int res = numDecimal + Integer.parseInt(numHexa);
+                resultado = txt + converter.decimalBin(Integer.toString(res));
+                break;
+            case '-':
+                int resSub = numDecimal - Integer.parseInt(numHexa);
                 if (resSub == 0) {
 
                     resultado = "0";
 
                 } else {
 
-                    resultado = txt + calc.decimalBin(Integer.toString(resSub));
-
-                  }
-        } 
-        
-        else {
-            
-            int resMult = numDecimal * Integer.parseInt(numHexa);
-            resultado = txt + calc.decimalBin(Integer.toString(resMult));
-            
+                    resultado = txt + converter.decimalBin(Integer.toString(resSub));
+                    
+                }
+                break;
+            default:
+                int resMult = numDecimal * Integer.parseInt(numHexa);
+                resultado = txt + converter.decimalBin(Integer.toString(resMult));
+                break;
         }
 
         return resultado;
 
     }
+    
+    /**
+     *
+     * <h1>Método responsável por realizar os cálculos de adição, 
+     * subtração e multiplicação entre números decimais e binários.</h1>
+     * 
+     *
+     * <p>
+     * Realiza os cálculos de números decimais e binários</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see operacoesDecBin
+     */
     
     public String operacoesDecBin(String decimal, String binario) {
         int numDecimal = Integer.parseInt(decimal);
-        String numBin = calc.binDec(binario);
+        String numBin = converter.binDec(binario);
         String txt = "Binário: ";
         
-        if (op == '+') {
-            
-            int res = numDecimal + Integer.parseInt(numBin);
-            resultado = txt + calc.decimalBin(Integer.toString(res));
-            
-        } else if (op == '-') {
-            
-            int resSub = numDecimal - Integer.parseInt(numBin);
-            
+        switch (op) {
+            case '+':
+                int res = numDecimal + Integer.parseInt(numBin);
+                resultado = txt + converter.decimalBin(Integer.toString(res));
+                break;
+            case '-':
+                int resSub = numDecimal - Integer.parseInt(numBin);
                 if (resSub == 0) {
 
                     resultado = "0";
-
-                } 
-
+                    
+                }
+                
                 else {
 
-                    resultado = txt + calc.decimalBin(Integer.toString(resSub));
+                    resultado = txt + converter.decimalBin(Integer.toString(resSub));
 
                 }
-            
-        } 
-        
-        else {
-            
-            int resMult = numDecimal * Integer.parseInt(numBin);
-            resultado = txt + calc.decimalBin(Integer.toString(resMult));
-            
+                break;
+            default:
+                int resMult = numDecimal * Integer.parseInt(numBin);
+                resultado = txt + converter.decimalBin(Integer.toString(resMult));
+                break;
         }
         
         return resultado;
     }
     
+/**
+     *
+     * <h1>Método responsável por realizar os cálculos de adição, 
+     * subtração e multiplicação entre números decimais.</h1>
+     * 
+     *
+     * <p>
+     * Realiza os cálculos de números decimais</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see operacoesDecBin
+     */
     public String operacoesDec(String decimal1, String decimal2) {
         
         String txt = "Decimal: ";
-        if (op == '+') {
-            
-            int res = Integer.parseInt(decimal1)+ Integer.parseInt(decimal2);
-            resultado = txt + Integer.toString(res);
-            
-        }
-        
-        else if (op == '-') {
-            int resSub = Integer.parseInt(decimal1) - Integer.parseInt(decimal2);
-                
+        switch (op) {
+            case '+':
+                int res = Integer.parseInt(decimal1)+ Integer.parseInt(decimal2);
+                resultado = txt + Integer.toString(res);
+                break;
+            case '-':
+                int resSub = Integer.parseInt(decimal1) - Integer.parseInt(decimal2);
                 if (resSub == 0) {
                     
                     resultado = "0";
@@ -169,34 +203,42 @@ public class Calculador {
                     resultado = txt + Integer.toString(resSub);
                     
                 }
-        } 
-        
-        else {
-            
-            int resMult = Integer.parseInt(decimal1) * Integer.parseInt(decimal2);
-            resultado = txt + Integer.toString(resMult);
-            
+                break;
+            default:
+                int resMult = Integer.parseInt(decimal1) * Integer.parseInt(decimal2);
+                resultado = txt + Integer.toString(resMult);
+                break;
         }
         
         return resultado;
     }
     
+    /**
+     *
+     * <h1>Método responsável por realizar os cálculos de adição, 
+     * subtração e multiplicação entre números hexadecimais e decimais.</h1>
+     * 
+     *
+     * <p>
+     * Realiza os cálculos de números hexadecimais e decimais</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see operacoesHexDec
+     */
     public String operacoesHexDec(String hexadecimal, String decimal) {
         int numDecimal = Integer.parseInt(decimal);
-        String numHex = calc.hexDec(hexadecimal);
+        String numHex = converter.hexDec(hexadecimal);
         String txt = "Binário: ";
         
-        if (op == '+') {
-            
-            int res = numDecimal + Integer.parseInt(numHex);
-            resultado = txt + calc.decimalBin(Integer.toString(res));
-            
-        } 
-        
-        else if (op == '-') {
-           
-            int resSub = Integer.parseInt(numHex) - numDecimal;
-               
+        switch (op) {
+            case '+':
+                int res = numDecimal + Integer.parseInt(numHex);
+                resultado = txt + converter.decimalBin(Integer.toString(res));
+                break;
+            case '-':
+                int resSub = Integer.parseInt(numHex) - numDecimal;
                 if (resSub == 0) {
                     
                     resultado = "0";
@@ -205,168 +247,215 @@ public class Calculador {
                 
                 else {
                     
-                    resultado = txt + calc.decimalBin(Integer.toString(resSub));
+                    resultado = txt + converter.decimalBin(Integer.toString(resSub));
                     
                 }
-                
-        } 
-        
-        else {
-            
-            int resMult = numDecimal * Integer.parseInt(numHex);
-            resultado = txt + calc.decimalBin(Integer.toString(resMult));
-            
+                break;
+            default:
+                int resMult = numDecimal * Integer.parseInt(numHex);
+                resultado = txt + converter.decimalBin(Integer.toString(resMult));
+                break;
         }
         
         return resultado;
     }
     
+    /**
+     *
+     * <h1>Método responsável por realizar os cálculos de adição, 
+     * subtração e multiplicação entre números hexadecimais e binários.</h1>
+     * 
+     *
+     * <p>
+     * Realiza os cálculos de números hexadecimais e binários</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see operacoesHexBin
+     */
     public String operacoesHexBin(String hexadecimal, String binario){
-        int numHexadecimal = Integer.parseInt(calc.hexDec(hexadecimal));
-        int numBinario = Integer.parseInt(calc.binDec(binario));
+        int numHexadecimal = Integer.parseInt(converter.hexDec(hexadecimal));
+        int numBinario = Integer.parseInt(converter.binDec(binario));
         String txt = "Binário: ";
         
-        if (op == '+') {
-            
-            int res = numHexadecimal + numBinario;
-            resultado = txt + calc.decimalBin(Integer.toString(res));
-        } 
-        
-        else if (op == '-') {
-            int resSub = numHexadecimal - numBinario;
-            
+        switch (op) {
+            case '+':
+                int res = numHexadecimal + numBinario;
+                resultado = txt + converter.decimalBin(Integer.toString(res));
+                break;
+            case '-':
+                int resSub = numHexadecimal - numBinario;
                 if (resSub == 0) {
                     resultado = "0";
-                } 
-
-                else {
-                    resultado = txt + calc.decimalBin(Integer.toString(resSub));
                 }
-        } 
-        
-        else {
-            
-            int resMult = numHexadecimal * numBinario;
-            resultado = txt + calc.decimalBin(Integer.toString(resMult));
-            
+                
+                else {
+                    resultado = txt + converter.decimalBin(Integer.toString(resSub));
+                }
+                break;
+            default:
+                int resMult = numHexadecimal * numBinario;
+                resultado = txt + converter.decimalBin(Integer.toString(resMult));
+                break;
         }
         
         return resultado;
     }
 
+    /**
+     *
+     * <h1>Método responsável por realizar os cálculos de adição, 
+     * subtração e multiplicação entre números hexadecimais.</h1>
+     * 
+     *
+     * <p>
+     * Realiza os cálculos de números hexadecimais</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see operacoesHex
+     */
     public String operacoesHex(String hexadecimal, String hexadecimal2){
-        int numHexadecimal = Integer.parseInt(calc.hexDec(hexadecimal));
-        int numHexadecimal2 = Integer.parseInt(calc.hexDec(hexadecimal2));
+        int numHexadecimal = Integer.parseInt(converter.hexDec(hexadecimal));
+        int numHexadecimal2 = Integer.parseInt(converter.hexDec(hexadecimal2));
         String txt = "Hexadecimal: ";
  
-        if (op == '+') {
-            
-            int res = numHexadecimal + numHexadecimal2;
-            resultado = txt + calc.decimalHex(Integer.toString(res));
-            
-        } 
-        
-        else if (op == '-') {
-            int resSub = numHexadecimal - numHexadecimal2;
+        switch (op) {
+            case '+':
+                int res = numHexadecimal + numHexadecimal2;
+                resultado = txt + converter.decimalHex(Integer.toString(res));
+                break;
+            case '-':
+                int resSub = numHexadecimal - numHexadecimal2;
                 if (resSub == 0) {
                     resultado = "0";
                 } else {
-                    resultado = txt + calc.decimalHex(Integer.toString(resSub));
+                    resultado = txt + converter.decimalHex(Integer.toString(resSub));
                 }
-        } 
-        
-        else {
-            
-            int resMult = numHexadecimal * numHexadecimal2;
-            resultado = txt + calc.decimalHex(Integer.toString(resMult));
-            
+                break;
+            default:
+                int resMult = numHexadecimal * numHexadecimal2;
+                resultado = txt + converter.decimalHex(Integer.toString(resMult));
+                break;
         }
         
         return resultado;
     }
     
+    /**
+     *
+     * <h1>Método responsável por realizar os cálculos de adição, 
+     * subtração e multiplicação entre números binários e decimais.</h1>
+     * 
+     *
+     * <p>
+     * Realiza os cálculos de números binários e decimais</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see operacoesBinDec
+     */
     public String operacoesBinDec(String binario, String decimal){
-        int numBinario = Integer.parseInt(calc.binDec(binario));
+        int numBinario = Integer.parseInt(converter.binDec(binario));
         int numDecimal = Integer.parseInt(decimal);
         String txt = "Binário: ";
        
-        if (op == '+') {
-            int res = numBinario + numDecimal;
-            resultado = txt + calc.decimalBin(Integer.toString(res));
-        } 
-        
-        else if (op == '-') {
-            int resSub = numBinario - numDecimal;
-            
+        switch (op) {
+            case '+':
+                int res = numBinario + numDecimal;
+                resultado = txt + converter.decimalBin(Integer.toString(res));
+                break;
+            case '-':
+                int resSub = numBinario - numDecimal;
                 if (resSub == 0) {
                     resultado = "0";
                 } 
                 
                 else {
-                     resultado = txt + calc.decimalBin(Integer.toString(resSub));
+                    resultado = txt + converter.decimalBin(Integer.toString(resSub));
                 }
-        } 
-        
-        else {
-            
-            int resMult = numBinario + numDecimal;
-            resultado = txt + calc.decimalBin(Integer.toString(resMult));
-            
+                break;
+            default:
+                int resMult = numBinario + numDecimal;
+                resultado = txt + converter.decimalBin(Integer.toString(resMult));
+                break;
         }
         
         return resultado;
     }
     
+     /**
+     *
+     * <h1>Método responsável por realizar os cálculos de adição, 
+     * subtração e multiplicação entre números binários e hexadecimais.</h1>
+     * 
+     *
+     * <p>
+     * Realiza os cálculos de números binários e hexadecimais</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see operacoesBinHex
+     */
     public String operacoesBinHex(String binario, String hexadecimal){
-        int numBinario = Integer.parseInt(calc.binDec(binario));
-        int numHexadecimal = Integer.parseInt(calc.hexDec(hexadecimal));
+        int numBinario = Integer.parseInt(converter.binDec(binario));
+        int numHexadecimal = Integer.parseInt(converter.hexDec(hexadecimal));
         String txt = "Binário: ";
        
-        if (op == '+') {
-            
-            int res = numBinario + numHexadecimal;
-            resultado = txt + calc.decimalBin(Integer.toString(res));
-            
-        } 
-        
-        else if (op == '-') {
-            
-            int resSub = numBinario - numHexadecimal;
-            
+        switch (op) {
+            case '+':
+                int res = numBinario + numHexadecimal;
+                resultado = txt + converter.decimalBin(Integer.toString(res));
+                break;
+            case '-':
+                int resSub = numBinario - numHexadecimal;
                 if (resSub == 0) {
                     resultado = "0";
                 } 
                 
                 else {
-                     resultado = txt + calc.decimalBin(Integer.toString(resSub));
+                    resultado = txt + converter.decimalBin(Integer.toString(resSub));
                 }
-        } 
-        
-        else {
-            
-            int resMult = numBinario + numHexadecimal;
-            resultado = txt + calc.decimalBin(Integer.toString(resMult));
-            
+                break;
+            default:
+                int resMult = numBinario + numHexadecimal;
+                resultado = txt + converter.decimalBin(Integer.toString(resMult));
+                break;
         }
         
         return resultado;
     }
     
+    /**
+     *
+     * <h1>Método responsável por realizar os cálculos de adição, 
+     * subtração e multiplicação entre números binários.</h1>
+     * 
+     *
+     * <p>
+     * Realiza os cálculos de números binários</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see operacoesBin
+     */
     public String operacoesBin(String binario, String binario2){
-        int numBinario = Integer.parseInt(calc.binDec(binario));
-        int numBinario2 = Integer.parseInt(calc.binDec(binario2));
+        int numBinario = Integer.parseInt(converter.binDec(binario));
+        int numBinario2 = Integer.parseInt(converter.binDec(binario2));
         String txt = "Binário: ";
 
-        if (op == '+') {
-            
-            int res = numBinario + numBinario2;
-            resultado = txt + calc.decimalBin(Integer.toString(res));
-            
-        } 
-        
-        else if (op == '-') {
-            
-            int resSub = numBinario - numBinario2;
+        switch (op) {
+            case '+':
+                int res = numBinario + numBinario2;
+                resultado = txt + converter.decimalBin(Integer.toString(res));
+                break;
+            case '-':
+                int resSub = numBinario - numBinario2;
                 if (resSub == 0) {
                     
                     resultado = "0";
@@ -375,20 +464,34 @@ public class Calculador {
                 
                 else {
                     
-                     resultado = txt + calc.decimalBin(Integer.toString(resSub));
-                     
+                    resultado = txt + converter.decimalBin(Integer.toString(resSub));
+                    
                 }
-        } 
-        
-        else {
-            
-            int resMult = numBinario + numBinario2;
-            resultado = txt + calc.decimalBin(Integer.toString(resMult));
-            
+                break;
+            default:
+                int resMult = numBinario + numBinario2;
+                resultado = txt + converter.decimalBin(Integer.toString(resMult));
+                break;
         }
         
         return resultado;
     }
+    
+    /**
+     *
+     * <h1>Método responsável por chamar os métodos que realizam os cálculos de adição, 
+     * subtração e multiplicação entre números.</h1>
+     * 
+     *
+     * <p>
+     * Chama os métodos que realizam os cálculos de adição, 
+     * subtração e multiplicação entre os números informados pelo usuário</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see calcular
+     */
     
     public String calcular() throws Exception {
 

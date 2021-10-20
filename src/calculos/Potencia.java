@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package calculos;
 
-/**
- *
- * @author Usuario
- */
+    /**
+     *
+     * <h1>Classe responsável por realizar a potenciação entre base e expoente.</h1>
+     *
+     * <p>
+     * Realiza a potenciação entre base e expoente</p>
+     *
+     *
+     * @author Henrique
+     *
+     * @see Potencia
+     */
 public class Potencia {
     
     public static double potencia(double base, Integer exp) {

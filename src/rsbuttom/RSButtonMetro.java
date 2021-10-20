@@ -62,10 +62,6 @@ public class RSButtonMetro extends JButton implements MouseListener, MouseMotion
         this.addMouseMotionListener(this);
     }
 
-    /**
-     * se pinta la imagen con dimensiones de ancho y alto iguales al alto del
-     * jbutton
-     */
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -73,17 +69,12 @@ public class RSButtonMetro extends JButton implements MouseListener, MouseMotion
     public void mouseClicked(MouseEvent e) {
     }
 
-    /**
-     * Cuando se presiona el boton se cambian los colores de fondo y de texto
-     */
+   
     public void mousePressed(MouseEvent e) {
         this.setForeground(this.colorTextPressed);
         this.setBackground(this.colorPressed);
     }
 
-    /**
-     * Cuando se leventa el mouse del jbutton se retoman los colores originales
-     */
     public void mouseReleased(MouseEvent e) {       
         this.setBackground(this.colorNormal);
         this.setForeground(this.colorTextNormal);
