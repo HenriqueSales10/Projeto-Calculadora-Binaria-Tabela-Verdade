@@ -54,7 +54,7 @@ public class PnlHome extends javax.swing.JPanel implements Runnable {
         Thread current = Thread.currentThread();
         while (current == horaEdata) {
             CalculaHora();
-            lblHora.setText(hora + ":" + minuto + ":" + segundo);
+        
         }
         
     }
@@ -63,11 +63,10 @@ public class PnlHome extends javax.swing.JPanel implements Runnable {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         lblData = new javax.swing.JLabel();
-        lblHora = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(1620, 950));
@@ -75,41 +74,34 @@ public class PnlHome extends javax.swing.JPanel implements Runnable {
         setPreferredSize(new java.awt.Dimension(1620, 950));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setFont(new java.awt.Font("Roboto", 1, 36)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("HORA");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 370, 186, 50));
-
-        jLabel7.setFont(new java.awt.Font("Roboto", 1, 48)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("BEM VINDO AO SISTEMA");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 1640, 70));
+        jLabel7.setText("Nomes: Henrique, Filipe, Lucas Michel, William G, Michel e Pedro Luis");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 610, 1640, 70));
 
         jLabel8.setFont(new java.awt.Font("Roboto", 1, 36)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("DATA");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 380, 186, 40));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 310, 186, 40));
 
         lblData.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         lblData.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblData.setText("DD/MM/YYYY");
         lblData.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(lblData, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 460, 820, 50));
+        add(lblData, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 390, 820, 50));
 
-        lblHora.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
-        lblHora.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblHora.setText("00:00:00");
-        lblHora.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(lblHora, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 460, 810, 50));
+        jLabel9.setFont(new java.awt.Font("Roboto", 1, 48)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("BEM VINDO AO SISTEMA");
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 1640, 70));
     }// </editor-fold>//GEN-END:initComponents
 
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lblData;
-    private javax.swing.JLabel lblHora;
     // End of variables declaration//GEN-END:variables
 }

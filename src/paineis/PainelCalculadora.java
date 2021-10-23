@@ -22,7 +22,8 @@ public final class PainelCalculadora extends javax.swing.JPanel {
         initComponents();
         jComboBase2.setVisible(false);
         jLabelN2.setVisible(false);
-        validarCombo1();    
+        validarCombo1();
+        
     }
    
 
@@ -302,11 +303,11 @@ public final class PainelCalculadora extends javax.swing.JPanel {
                 jComboBase1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jComboBase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 113, 175, -1));
+        jPanel2.add(jComboBase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 113, 175, 30));
 
         jLabelN1.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         jLabelN1.setText("BASE PRIMEIRO NÚMERO");
-        jPanel2.add(jLabelN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 115, -1, -1));
+        jPanel2.add(jLabelN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, -1, -1));
 
         jButtonCE.setText("CE");
         jButtonCE.addActionListener(new java.awt.event.ActionListener() {
@@ -362,7 +363,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
                 jButton0ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton0, new org.netbeans.lib.awtextra.AbsoluteConstraints(303, 478, 58, 62));
+        jPanel2.add(jButton0, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 410, 60, 60));
 
         jButton5.setText("5");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -436,12 +437,14 @@ public final class PainelCalculadora extends javax.swing.JPanel {
         });
         jPanel2.add(jButtonIgual, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 203, 60, 60));
 
+        txtSaida.setFont(new java.awt.Font("Consolas", 0, 24)); // NOI18N
+        txtSaida.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtSaida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSaidaActionPerformed(evt);
             }
         });
-        jPanel2.add(txtSaida, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 51, 486, 44));
+        jPanel2.add(txtSaida, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 15, 486, 80));
 
         jButtonSoma.setText("+");
         jButtonSoma.addActionListener(new java.awt.event.ActionListener() {
@@ -489,7 +492,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
                 jComboBase2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jComboBase2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 153, 175, -1));
+        jPanel2.add(jComboBase2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 153, 175, 30));
 
         jButton3.setText("3");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
