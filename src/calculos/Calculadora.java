@@ -13,9 +13,9 @@ import conversao.Conversor;
      *
      * @author Henrique
      *
-     * @see Calculador
+     * @see Calculadora
      */
-public class Calculador {
+public class Calculadora {
 
     private String n1, n2;
     private char op;

@@ -1,8 +1,7 @@
 package conversao;
 
 import calculos.Potencia;
-import javax.swing.JOptionPane;
-import static calculos.Potencia.potencia;
+
 
     /**
      *
@@ -72,20 +71,23 @@ public class Conversor {
      *
      *
      * @author Henrique
+     * @param decimal
+     * @return 
      *
      * @see decimalHex
      */
     
     public String decimalHex(String decimal) {
-        int res;
+        int resto;
         char[] hexa = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
         String valorHexadecimal = "";
         int dec = Integer.parseInt(decimal);
          
         while (dec > 0) {
               
-            res = dec % 16;
-            valorHexadecimal = hexa[res] + valorHexadecimal;
+            //Variável resto recebe o resto da divisão do número decimal por 16
+            resto = dec % 16;
+            valorHexadecimal = hexa[resto] + valorHexadecimal;
             dec = dec / 16;
             
           }
@@ -104,6 +106,8 @@ public class Conversor {
      *
      *
      * @author Henrique
+     * @param decimal
+     * @return 
      *
      * @see decimalBin
      */
@@ -130,6 +134,8 @@ public class Conversor {
      *
      *
      * @author Henrique
+     * @param binario
+     * @return 
      *
      * @see binDec
      */
@@ -161,6 +167,8 @@ public class Conversor {
      *
      *
      * @author Henrique
+     * @param binario
+     * @return 
      *
      * @see binHex
      */
@@ -168,7 +176,7 @@ public class Conversor {
     public String binHex(String binario) {
         String hexadecimal = "";
         int bin = Integer.parseInt(binario);
-        int aux, cont = 0, acumulador = 0;
+        int auxiliar, cont = 0, acumulador = 0;
           
         while (bin > 0) {
             
@@ -177,9 +185,9 @@ public class Conversor {
 
              while (cont < 4) {
 
-                aux = bin % 10;
+                auxiliar = bin % 10;
 
-                if (aux == 1) {
+                if (auxiliar == 1) {
 
                     //Primeira posição (direita)
                     switch (cont) {
@@ -252,12 +260,14 @@ public class Conversor {
      *
      *
      * @author Henrique
+     * @param numeroHex
+     * @return 
      *
      * @see hexDec
      */
     
     public String hexDec(String numeroHex) {
-        int res, numDec = 0, i = 0;
+        int numDec = 0, i = 0;
 
         for (i = 0; i < numeroHex.length(); i++) {
 
@@ -283,6 +293,8 @@ public class Conversor {
      *
      *
      * @author Henrique
+     * @param numeroHexadecimal
+     * @return 
      *
      * @see hexDec
      */
