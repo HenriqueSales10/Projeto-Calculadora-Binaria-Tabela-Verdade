@@ -22,8 +22,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
         initComponents();
         jComboBase2.setVisible(false);
         jLabelN2.setVisible(false);
-        validarCombo1();
-        
+        validarCombo1();    
     }
    
 
