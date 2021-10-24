@@ -6,6 +6,7 @@ import paineis.LigarPainel;
 import paineis.PainelCalculadora;
 import paineis.PainelConversao;
 import paineis.PnlHome;
+import paineis.TabelaVerdade;
 
 
 /**
@@ -44,6 +45,7 @@ public class Principal extends javax.swing.JFrame {
         BtnConversao = new rsbuttom.RSButtonMetro();
         BtnCalculadora = new rsbuttom.RSButtonMetro();
         BtnHome = new rsbuttom.RSButtonMetro();
+        BtnTabelaVerdade = new rsbuttom.RSButtonMetro();
         pnPrincipal = new javax.swing.JPanel();
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
@@ -105,7 +107,7 @@ public class Principal extends javax.swing.JFrame {
                 BtnConversaoActionPerformed(evt);
             }
         });
-        pnMenu.add(BtnConversao, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 280, 60));
+        pnMenu.add(BtnConversao, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 280, 60));
 
         BtnCalculadora.setBackground(new java.awt.Color(0, 0, 0));
         BtnCalculadora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ImgCalculadora.png"))); // NOI18N
@@ -152,6 +154,26 @@ public class Principal extends javax.swing.JFrame {
         });
         pnMenu.add(BtnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 280, 60));
 
+        BtnTabelaVerdade.setBackground(new java.awt.Color(0, 0, 0));
+        BtnTabelaVerdade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/codigo-binario.png"))); // NOI18N
+        BtnTabelaVerdade.setText("Tabela verdade");
+        BtnTabelaVerdade.setColorHover(new java.awt.Color(0, 0, 0));
+        BtnTabelaVerdade.setColorNormal(new java.awt.Color(0, 0, 0));
+        BtnTabelaVerdade.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        BtnTabelaVerdade.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BtnTabelaVerdade.setIconTextGap(25);
+        BtnTabelaVerdade.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BtnTabelaVerdadeMousePressed(evt);
+            }
+        });
+        BtnTabelaVerdade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnTabelaVerdadeActionPerformed(evt);
+            }
+        });
+        pnMenu.add(BtnTabelaVerdade, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 280, 60));
+
         jPanel1.add(pnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 280, 1000));
 
         pnPrincipal.setBackground(new java.awt.Color(255, 255, 255));
@@ -188,6 +210,10 @@ public class Principal extends javax.swing.JFrame {
             this.BtnConversao.setColorNormal(new Color(0,0,0));
             this.BtnConversao.setColorHover(new Color(51,51,51));
             this.BtnConversao.setColorPressed(new Color(0,0,0));
+            
+            this.BtnTabelaVerdade.setColorNormal(new Color(0,0,0));
+            this.BtnTabelaVerdade.setColorHover(new Color(51,51,51));
+            this.BtnTabelaVerdade.setColorPressed(new Color(0,0,0));
 
             this.BtnCalculadora.setColorNormal(new Color(0,0,0));
             this.BtnCalculadora.setColorHover(new Color(51,51,51));
@@ -206,6 +232,7 @@ public class Principal extends javax.swing.JFrame {
         this.BtnHome.setSelected(true);
         this.BtnConversao.setSelected(false);
         this.BtnCalculadora.setSelected(false);
+        this.BtnTabelaVerdade.setSelected(false);
     }//GEN-LAST:event_BtnHomeMousePressed
 
     private void BtnCalculadoraKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnCalculadoraKeyPressed
@@ -223,6 +250,10 @@ public class Principal extends javax.swing.JFrame {
             this.BtnCalculadora.setColorNormal(new Color(51,51,51));
             this.BtnCalculadora.setColorHover(new Color(51,51,51));
             this.BtnCalculadora.setColorPressed(new Color(51,51,51));
+            
+            this.BtnTabelaVerdade.setColorNormal(new Color(0,0,0));
+            this.BtnTabelaVerdade.setColorHover(new Color(51,51,51));
+            this.BtnTabelaVerdade.setColorPressed(new Color(0,0,0));
 
             this.BtnConversao.setColorNormal(new Color(0,0,0));
             this.BtnConversao.setColorHover(new Color(51,51,51));
@@ -239,8 +270,8 @@ public class Principal extends javax.swing.JFrame {
 
     private void BtnCalculadoraMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnCalculadoraMousePressed
         this.BtnHome.setSelected(false);
-
         this.BtnConversao.setSelected(false);
+        this.BtnTabelaVerdade.setSelected(false);
         this.BtnCalculadora.setSelected(true);
     }//GEN-LAST:event_BtnCalculadoraMousePressed
 
@@ -255,6 +286,10 @@ public class Principal extends javax.swing.JFrame {
             this.BtnCalculadora.setColorNormal(new Color(0,0,0));
             this.BtnCalculadora.setColorHover(new Color(51,51,51));
             this.BtnCalculadora.setColorPressed(new Color(0,0,0));
+            
+            this.BtnTabelaVerdade.setColorNormal(new Color(0,0,0));
+            this.BtnTabelaVerdade.setColorHover(new Color(51,51,51));
+            this.BtnTabelaVerdade.setColorPressed(new Color(0,0,0));
 
             this.BtnConversao.setColorNormal(new Color(51,51,51));
             this.BtnConversao.setColorHover(new Color(51,51,51));
@@ -272,8 +307,47 @@ public class Principal extends javax.swing.JFrame {
     private void BtnConversaoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnConversaoMousePressed
         this.BtnHome.setSelected(false);
         this.BtnCalculadora.setSelected(false);
+        this.BtnTabelaVerdade.setSelected(false);
         this.BtnConversao.setSelected(true);
     }//GEN-LAST:event_BtnConversaoMousePressed
+
+    private void BtnTabelaVerdadeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnTabelaVerdadeMousePressed
+        this.BtnHome.setSelected(false);
+        this.BtnCalculadora.setSelected(false);
+        this.BtnTabelaVerdade.setSelected(true);
+        this.BtnConversao.setSelected(false);
+    }//GEN-LAST:event_BtnTabelaVerdadeMousePressed
+
+    private void BtnTabelaVerdadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTabelaVerdadeActionPerformed
+            new LigarPainel(pnPrincipal, new TabelaVerdade());
+  
+            if (this.BtnTabelaVerdade.isSelected()){
+
+            this.BtnHome.setColorNormal(new Color(0,0,0));
+            this.BtnHome.setColorHover(new Color(51,51,51));
+            this.BtnHome.setColorPressed(new Color(0,0,0));
+
+            this.BtnCalculadora.setColorNormal(new Color(0,0,0));
+            this.BtnCalculadora.setColorHover(new Color(51,51,51));
+            this.BtnCalculadora.setColorPressed(new Color(0,0,0));
+            
+            this.BtnConversao.setColorNormal(new Color(0,0,0));
+            this.BtnConversao.setColorHover(new Color(51,51,51));
+            this.BtnConversao.setColorPressed(new Color(0,0,0));
+
+            this.BtnTabelaVerdade.setColorNormal(new Color(51,51,51));
+            this.BtnTabelaVerdade.setColorHover(new Color(51,51,51));
+            this.BtnTabelaVerdade.setColorPressed(new Color(51,51,51));
+
+            }else{
+
+            this.BtnTabelaVerdade.setColorNormal(new Color(0,0,0));
+            this.BtnTabelaVerdade.setColorHover(new Color(51,51,51));
+            this.BtnTabelaVerdade.setColorPressed(new Color(0,0,0));
+
+            }
+  
+    }//GEN-LAST:event_BtnTabelaVerdadeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -343,6 +417,7 @@ public class Principal extends javax.swing.JFrame {
     private rsbuttom.RSButtonMetro BtnCalculadora;
     private rsbuttom.RSButtonMetro BtnConversao;
     private rsbuttom.RSButtonMetro BtnHome;
+    private rsbuttom.RSButtonMetro BtnTabelaVerdade;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
