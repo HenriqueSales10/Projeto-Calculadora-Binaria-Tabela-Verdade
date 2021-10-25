@@ -46,6 +46,7 @@ public class Principal extends javax.swing.JFrame {
         BtnCalculadora = new rsbuttom.RSButtonMetro();
         BtnHome = new rsbuttom.RSButtonMetro();
         BtnTabelaVerdade = new rsbuttom.RSButtonMetro();
+        jLabel1 = new javax.swing.JLabel();
         pnPrincipal = new javax.swing.JPanel();
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
@@ -155,7 +156,7 @@ public class Principal extends javax.swing.JFrame {
         pnMenu.add(BtnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 280, 60));
 
         BtnTabelaVerdade.setBackground(new java.awt.Color(0, 0, 0));
-        BtnTabelaVerdade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/codigo-binario.png"))); // NOI18N
+        BtnTabelaVerdade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logo.png"))); // NOI18N
         BtnTabelaVerdade.setText("Tabela verdade");
         BtnTabelaVerdade.setColorHover(new java.awt.Color(0, 0, 0));
         BtnTabelaVerdade.setColorNormal(new java.awt.Color(0, 0, 0));
@@ -173,6 +174,10 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         pnMenu.add(BtnTabelaVerdade, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 280, 60));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/unisociesc-color.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        pnMenu.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 860, -1, -1));
 
         jPanel1.add(pnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 280, 1000));
 
@@ -418,6 +423,7 @@ public class Principal extends javax.swing.JFrame {
     private rsbuttom.RSButtonMetro BtnConversao;
     private rsbuttom.RSButtonMetro BtnHome;
     private rsbuttom.RSButtonMetro BtnTabelaVerdade;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;

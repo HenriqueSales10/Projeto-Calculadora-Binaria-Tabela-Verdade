@@ -257,6 +257,9 @@
           <SubComponents>
             <Component class="javax.swing.JComboBox" name="jComboBase1">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="11" style="1"/>
+                </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                   <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;Decimal&quot;, &quot;Bin&#xe1;rio&quot;, &quot;Hexadecimal&quot; })" type="code"/>
                 </Property>
@@ -278,6 +281,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonCE">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="CE"/>
               </Properties>
               <Events>
@@ -286,6 +292,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonA">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="A"/>
               </Properties>
               <Events>
@@ -294,6 +303,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton4">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="4"/>
               </Properties>
               <Events>
@@ -302,6 +314,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton1">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="1"/>
               </Properties>
               <Events>
@@ -310,6 +325,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton8">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="8"/>
               </Properties>
               <Events>
@@ -318,6 +336,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton7">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="7"/>
               </Properties>
               <Events>
@@ -326,6 +347,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton0">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
               <Events>
@@ -334,6 +358,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton5">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="5"/>
               </Properties>
               <Events>
@@ -342,6 +369,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonC">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="C"/>
               </Properties>
               <Events>
@@ -350,6 +380,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton2">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="2"/>
               </Properties>
               <Events>
@@ -358,6 +391,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton9">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="9"/>
               </Properties>
               <Events>
@@ -366,6 +402,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonE">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="E"/>
               </Properties>
               <Events>
@@ -374,6 +413,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonB">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="B"/>
               </Properties>
               <Events>
@@ -382,6 +424,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonD">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="D"/>
               </Properties>
               <Events>
@@ -390,6 +435,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonF">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="F"/>
               </Properties>
               <Events>
@@ -398,6 +446,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonIgual">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="="/>
               </Properties>
               <Events>
@@ -417,6 +468,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonSoma">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="+"/>
               </Properties>
               <Events>
@@ -425,6 +479,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonSubtracao">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="-"/>
               </Properties>
               <Events>
@@ -433,6 +490,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonMultiplicacao">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="X"/>
               </Properties>
               <Events>
@@ -445,10 +505,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="14" style="0"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="33" red="0" type="rgb"/>
+                  <Font name="Tahoma" size="18" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&#x2190;"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -469,6 +526,9 @@
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBase2">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="11" style="1"/>
+                </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                   <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;Decimal&quot;, &quot;Bin&#xe1;rio&quot;, &quot;Hexadecimal&quot; })" type="code"/>
                 </Property>
@@ -482,6 +542,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton3">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="3"/>
               </Properties>
               <Events>
@@ -490,6 +553,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton6">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="6"/>
               </Properties>
               <Events>

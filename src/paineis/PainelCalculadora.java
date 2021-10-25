@@ -296,6 +296,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setMaximumSize(new java.awt.Dimension(548, 591));
 
+        jComboBase1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jComboBase1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Decimal", "Binário", "Hexadecimal" }));
         jComboBase1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -306,6 +307,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
         jLabelN1.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         jLabelN1.setText("BASE PRIMEIRO NÚMERO");
 
+        jButtonCE.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonCE.setText("CE");
         jButtonCE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -313,6 +315,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButtonA.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonA.setText("A");
         jButtonA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -320,6 +323,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton4.setText("4");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -327,6 +331,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton1.setText("1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -334,6 +339,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButton8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton8.setText("8");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -341,6 +347,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButton7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton7.setText("7");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -348,6 +355,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButton0.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton0.setText("0");
         jButton0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -355,6 +363,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButton5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton5.setText("5");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -362,6 +371,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButtonC.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonC.setText("C");
         jButtonC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -369,6 +379,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton2.setText("2");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -376,6 +387,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButton9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton9.setText("9");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -383,6 +395,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButtonE.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonE.setText("E");
         jButtonE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -390,6 +403,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButtonB.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonB.setText("B");
         jButtonB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -397,6 +411,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButtonD.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonD.setText("D");
         jButtonD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -404,6 +419,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButtonF.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonF.setText("F");
         jButtonF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -411,6 +427,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButtonIgual.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonIgual.setText("=");
         jButtonIgual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -426,6 +443,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButtonSoma.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonSoma.setText("+");
         jButtonSoma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -433,6 +451,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButtonSubtracao.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonSubtracao.setText("-");
         jButtonSubtracao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -440,6 +459,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButtonMultiplicacao.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonMultiplicacao.setText("X");
         jButtonMultiplicacao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -448,8 +468,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
         });
 
         jButtonVoltar.setBackground(new java.awt.Color(255, 255, 255));
-        jButtonVoltar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButtonVoltar.setForeground(new java.awt.Color(0, 51, 102));
+        jButtonVoltar.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButtonVoltar.setText("←");
         jButtonVoltar.setBorder(null);
         jButtonVoltar.addActionListener(new java.awt.event.ActionListener() {
@@ -461,6 +480,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
         jLabelN2.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         jLabelN2.setText("BASE SEGUNDO NÚMERO");
 
+        jComboBase2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jComboBase2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Decimal", "Binário", "Hexadecimal" }));
         jComboBase2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -468,6 +488,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton3.setText("3");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -475,6 +496,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
+        jButton6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton6.setText("6");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
