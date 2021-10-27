@@ -81,11 +81,11 @@ public class Principal extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 366, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         pnMenu.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 560, 366, -1));
@@ -108,7 +108,7 @@ public class Principal extends javax.swing.JFrame {
                 BtnConversaoActionPerformed(evt);
             }
         });
-        pnMenu.add(BtnConversao, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 280, 60));
+        pnMenu.add(BtnConversao, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 280, 60));
 
         BtnCalculadora.setBackground(new java.awt.Color(0, 0, 0));
         BtnCalculadora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ImgCalculadora.png"))); // NOI18N
@@ -173,11 +173,11 @@ public class Principal extends javax.swing.JFrame {
                 BtnTabelaVerdadeActionPerformed(evt);
             }
         });
-        pnMenu.add(BtnTabelaVerdade, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 280, 60));
+        pnMenu.add(BtnTabelaVerdade, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 280, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/unisociesc-color.png"))); // NOI18N
         jLabel1.setText("jLabel1");
-        pnMenu.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 860, -1, -1));
+        pnMenu.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 770, -1, -1));
 
         jPanel1.add(pnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 280, 1000));
 

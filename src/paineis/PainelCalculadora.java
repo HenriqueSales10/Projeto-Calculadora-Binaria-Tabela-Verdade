@@ -39,6 +39,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
     public void BotoesBinario(){
             
             jButton0.setEnabled(true);
+            jButton1.setEnabled(true);
             jButton2.setEnabled(false);
             jButton3.setEnabled(false);
             jButton4.setEnabled(false);
@@ -296,7 +297,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setMaximumSize(new java.awt.Dimension(548, 591));
 
-        jComboBase1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jComboBase1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jComboBase1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Decimal", "Binário", "Hexadecimal" }));
         jComboBase1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -304,7 +305,7 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
-        jLabelN1.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        jLabelN1.setFont(new java.awt.Font("Arial Black", 0, 16)); // NOI18N
         jLabelN1.setText("BASE PRIMEIRO NÚMERO");
 
         jButtonCE.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -477,10 +478,10 @@ public final class PainelCalculadora extends javax.swing.JPanel {
             }
         });
 
-        jLabelN2.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        jLabelN2.setFont(new java.awt.Font("Arial Black", 0, 16)); // NOI18N
         jLabelN2.setText("BASE SEGUNDO NÚMERO");
 
-        jComboBase2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jComboBase2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jComboBase2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Decimal", "Binário", "Hexadecimal" }));
         jComboBase2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -11,7 +11,7 @@ import calculos.Potencia;
      * Realiza a conversão de bases</p>
      *
      *
-     * @author Conversor
+     * @author Henrique
      *
      * @see Potencia
      */

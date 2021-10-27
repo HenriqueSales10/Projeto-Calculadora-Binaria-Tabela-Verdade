@@ -11,7 +11,7 @@ import conversao.Conversor;
      * Realiza o cálculo das expressões</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see Calculadora
      */
@@ -84,7 +84,7 @@ public class Calculadora {
      * Realiza os cálculos de números decimais e hexadecimais</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see operacoesDecHex
      */
@@ -130,7 +130,7 @@ public class Calculadora {
      * Realiza os cálculos de números decimais e binários</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see operacoesDecBin
      */
@@ -178,7 +178,7 @@ public class Calculadora {
      * Realiza os cálculos de números decimais</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see operacoesDecBin
      */
@@ -223,7 +223,7 @@ public class Calculadora {
      * Realiza os cálculos de números hexadecimais e decimais</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see operacoesHexDec
      */
@@ -270,7 +270,7 @@ public class Calculadora {
      * Realiza os cálculos de números hexadecimais e binários</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see operacoesHexBin
      */
@@ -313,7 +313,7 @@ public class Calculadora {
      * Realiza os cálculos de números hexadecimais</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see operacoesHex
      */
@@ -354,7 +354,7 @@ public class Calculadora {
      * Realiza os cálculos de números binários e decimais</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see operacoesBinDec
      */
@@ -397,7 +397,7 @@ public class Calculadora {
      * Realiza os cálculos de números binários e hexadecimais</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see operacoesBinHex
      */
@@ -440,7 +440,7 @@ public class Calculadora {
      * Realiza os cálculos de números binários</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see operacoesBin
      */
@@ -488,7 +488,7 @@ public class Calculadora {
      * subtração e multiplicação entre os números informados pelo usuário</p>
      *
      *
-     * @author Henrique
+     * @author Wiliam e Michel
      *
      * @see calcular
      */

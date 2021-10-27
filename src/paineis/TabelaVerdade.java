@@ -51,7 +51,7 @@ public class TabelaVerdade extends javax.swing.JPanel {
         inicializaMatriz();
         expressaoParaColunas();
         calculaQuantidadeLinhasUsadas();
-        geraValoresDasPreposicoes(); // Até aqui tá ok
+        geraValoresDasPreposicoes(); // 
         resolveDentroDosParenteses();
         processa(0, tamanhoExpressao - 1);
     }
